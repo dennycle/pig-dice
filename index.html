@@ -10,31 +10,37 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-md-5">
-          <h1>Player 1</h1>
-          <h3>Score</h3>
-          <h2><span id="score1">0</span></h2>
-          <button type="button" id="rollDie1">Roll The Die</button>
-          <br>
-          <br>
-          <button type="button" id="hold1">Hold</button>
+      <div id="play">
+        <div class="row">
+          <div class="col-md-5">
+            <h1>Player 1</h1>
+            <h3>Score</h3>
+            <h2><span id="score1">0</span></h2>
+            <button type="button" id="rollDie1">Roll The Die</button>
+            <br>
+            <br>
+            <button type="button" id="hold1">Hold</button>
+          </div>
+          <div class="col-md-2">
+            <h3>Die</h3>
+            <h2><span id="die">0</span></h2>
+            <h3>Round Score</h3>
+            <h2><span id="roundScore">0</span></h2>
+          </div>
+          <div class="col-md-5">
+            <h1>Player 2</h1>
+            <h3>Score</h3>
+            <h2><span id="score2">0</span></h2>
+            <button type="button" id="rollDie2" disabled=true>Roll The Die</button>
+            <br>
+            <br>
+            <button type="button" id="hold2" disabled=true>Hold</button>
+          </div>
         </div>
-        <div class="col-md-2">
-          <h3>Die</h3>
-          <h2><span id="die">0</span></h2>
-          <h3>Round Score</h3>
-          <h2><span id="roundScore">0</span></h2>
-        </div>
-        <div class="col-md-5">
-          <h1>Player 2</h1>
-          <h3>Score</h3>
-          <h2><span id="score2">0</span></h2>
-          <button type="button" id="rollDie2">Roll The Die</button>
-          <br>
-          <br>
-          <button type="button" id="hold2">Hold</button>
-        </div>
+      </div>
+
+      <div id="reset">
+        <button id="resetButton" type="button" name="button">Reset</button>
       </div>
     </div>
   </body>

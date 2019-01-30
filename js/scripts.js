@@ -40,7 +40,7 @@ Player.prototype.RollTheDie = function(dieScore) {
     return false;
   } else {
     this.roundScore += dieScore;
-    if (this.roundScore + this.score >= 100){
+    if (this.roundScore + this.score >= winningScore){
       this.score += this.roundScore;
       return this.score;
 
@@ -54,6 +54,7 @@ function getRandom() {
 
 var player1 = new Player();
 var player2 = new Player();
+var winningScore = 20;
 
 function emptyRoundScore() {
   $("#die").text("0");
@@ -65,8 +66,10 @@ function scoreCheck(result, userId){
   if (userId === 2) {
     nextId = 1;
   }
-  if (result >= 100){
+  if (result >= winningScore){
     alert("Player " + userId + " wins!");
+    $("#reset").show();
+    $("#play").hide();
   } else if (result === false) {
     disableButtons(userId, nextId);
     emptyRoundScore();
@@ -110,6 +113,10 @@ $(document).ready(function() {
     $("#score2").text(player2.score);
     disableButtons(2, 1);
     emptyRoundScore();
+  });
+
+  $("#reset").click(function(){
+    location.reload();
   });
 
 });
