@@ -10,33 +10,35 @@
   </head>
   <body>
     <div class="container">
-      <h1>Pig Dice</h1>
+      <h1><img src="img/dice.png" class="dice" alt="pic of a die"> Pig Dice <img src="img/dice.png" class="dice" alt="pic of a die" id="flippic"></h1>
       <div id="play">
         <div class="row">
           <div class="col-md-5">
-            <h1>Player 1</h1>
+            <img src="img/pig.png" class="piggy" alt="battle pig" id="flippic">
+            <h2>Player 1</h2>
             <h3>Score</h3>
             <h2><span id="score1">0</span></h2>
-            <button type="button" class="btn btn-info" id="rollDie1">Roll The Die</button>
+            <button type="button" class="btn btn-danger" id="rollDie1">Roll The Dice</button>
             <br>
             <br>
-            <button type="button" class="btn btn-info" id="hold1">Hold</button>
+            <button type="button" class="btn btn-danger" id="hold1">Hold</button>
           </div>
           <div class="col-md-2">
             <h3>Dice</h3>
-            <h2><span id="die1">0</span>      
+            <h2><span id="die1">0</span>
               <span id="die2">0</span></h2>
             <h3>Round Score</h3>
             <h2><span id="roundScore">0</span></h2>
           </div>
           <div class="col-md-5">
-            <h1>Player 2</h1>
+            <img src="img/pig.png" class="piggy" alt="battle pig">
+            <h2>Player 2</h2>
             <h3>Score</h3>
             <h2><span id="score2">0</span></h2>
-            <button type="button" class="btn btn-info" id="rollDie2" disabled=true>Roll The Die</button>
+            <button type="button" class="btn btn-danger" id="rollDie2" disabled=true>Roll The Dice</button>
             <br>
             <br>
-            <button type="button" class="btn btn-info" id="hold2" disabled=true>Hold</button>
+            <button type="button" class="btn btn-danger" id="hold2" disabled=true>Hold</button>
           </div>
         </div>
       </div>
@@ -44,7 +46,7 @@
       <div id="reset">
         <br>
         <br>
-        <button id="resetButton" class="btn btn-info" type="button" name="button">Reset</button>
+        <button id="resetButton" class="btn btn-danger" type="button" name="button">Reset</button>
       </div>
     </div>
   </body>

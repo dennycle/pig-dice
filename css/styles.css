@@ -6,7 +6,7 @@ body{
   display: none;
 }
 
-#pig1 {
+#flippic {
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
@@ -14,9 +14,20 @@ body{
   filter: FlipH;
   -ms-filter: "FlipH";
 }
-img {
-  width: 200px;
+.piggy{
+  width: 250px;
+}
+.dice{
+  width: 80px;
 }
 span {
-  margin: 10px;
+  margin: 20px;
+}
+h1 {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.col-md-2 {
+  margin-top: 60px;
 }

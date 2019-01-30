@@ -108,7 +108,7 @@ function displayPlayerScore(result, userId){
     enableButtons(nextId);
     emptyRoundScore();
     displayDiePoints(allDice);
-    alert("Player " + nextId + "'s turn.");
+    alert("You rolled a 1! Player " + nextId + "'s turn.");
   } else {
     $("#roundScore").text(result);
   }
