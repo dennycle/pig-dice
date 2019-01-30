@@ -10,20 +10,22 @@
   </head>
   <body>
     <div class="container">
+      <h1>Pig Dice</h1>
       <div id="play">
         <div class="row">
           <div class="col-md-5">
             <h1>Player 1</h1>
             <h3>Score</h3>
             <h2><span id="score1">0</span></h2>
-            <button type="button" id="rollDie1">Roll The Die</button>
+            <button type="button" class="btn btn-info" id="rollDie1">Roll The Die</button>
             <br>
             <br>
-            <button type="button" id="hold1">Hold</button>
+            <button type="button" class="btn btn-info" id="hold1">Hold</button>
           </div>
           <div class="col-md-2">
-            <h3>Die</h3>
-            <h2><span id="die">0</span></h2>
+            <h3>Dice</h3>
+            <h2><span id="die1">0</span>      
+              <span id="die2">0</span></h2>
             <h3>Round Score</h3>
             <h2><span id="roundScore">0</span></h2>
           </div>
@@ -31,16 +33,18 @@
             <h1>Player 2</h1>
             <h3>Score</h3>
             <h2><span id="score2">0</span></h2>
-            <button type="button" id="rollDie2" disabled=true>Roll The Die</button>
+            <button type="button" class="btn btn-info" id="rollDie2" disabled=true>Roll The Die</button>
             <br>
             <br>
-            <button type="button" id="hold2" disabled=true>Hold</button>
+            <button type="button" class="btn btn-info" id="hold2" disabled=true>Hold</button>
           </div>
         </div>
       </div>
 
       <div id="reset">
-        <button id="resetButton" type="button" name="button">Reset</button>
+        <br>
+        <br>
+        <button id="resetButton" class="btn btn-info" type="button" name="button">Reset</button>
       </div>
     </div>
   </body>
